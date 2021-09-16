@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sanjana Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons --> 
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Real time clock -->
+  <script>
+    function clock1() {
+            var t = new Date().getHours();
+  let date = new Date(); 
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+  let ss = date.getSeconds();
+  let session = "AM";
+
+  if(hh == 0){
+      hh = 12;
+  }
+  if(hh > 12){
+      hh = hh - 12;
+      session = "PM";
+   }
+   hh = (hh < 10) ? "0" + hh : hh;
+   mm = (mm < 10) ? "0" + mm : mm;
+   ss = (ss < 10) ? "0" + ss : ss;
+    
+   let time = hh + ":" + mm + ":" + ss + " " + session;
+   document.getElementById("disp").innerText = time; 
+   ref();
+}
+function ref(){
+    var r=1000;
+    myt = setTimeout('clock1()', r)
+}
+
+</script>
+<style> 
+  #textbox1 {
+      font-family: veradana;
+      font-size: 20px;
+      background-color: aquamarine;
+  }
+  .buttons {
+      border-radius: 24%;
+      height: 50px;
+      width: 50px;
+      font-size: 20px;
+      background-color: darkgray;
+      color: darkgreen;
+      text-shadow: 2px 2px 2px green;
+  }
+  table {
+      background-color: darkgreen;
+  }
+  </style>
+
+ <script>
+   function calc(res) {
+      cal.res.value=cal.res.value+res;
+  }
+
+  function mult() {
+      
+      var n=document.getElementById('tab').value;
+  
+      var s="";
+      for(var i=1; i<11; i++)
+      {
+          c=n*i;
+          s += n + 'x' + i + '=' + c + "<br>";
+      }
+      document.getElementById("para1").innerHTML=s;
+      document.getElementById("para1").style.fontFamily="Verdana";
+      document.getElementById("para1").style.fontSize="14px";
+      document.getElementById("para1").style.backgroundColor="pink";
+      document.getElementById("para1").style.padding="20px";
+  }
+  function randomno()
+        {
+            var r = Math.floor(Math.random()*256);
+            var g = Math.floor(Math.random()*256);
+            var b = Math.floor(Math.random()*256);
+            document.getElementById("bkgrnd").style.backgroundColor="rgb("+r+","+g+ "," +b+')';
+        }
+</script>
+  <!-- =======================================================
+  * Template Name: Sanjana
+  * Author: Sanjana with help from Bootstrapmade
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body onload="clock1()">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
+    <p id="disp" style="margin-right: 400px; color: rgb(243, 235, 235);"></p>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="#about">About</a></li>
+        <li><a class="nav-link scrollto" href="#resume">Family</a></li>
+        <li><a class="nav-link scrollto" href="#services">Book Reviews</a></li>
+        <li><a class="nav-link scrollto " href="#portfolio">Hobbies</a></li>
+        <li><a class="nav-link scrollto" href="#contact">Basketball</a></li>
+        <li><a class="nav-link scrollto" href="#javascript">JavaScript Projects</a></li>
+        <li><a class="nav-link scrollto" href="#Forms">Feedback</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Sanjana Lingamallu</h1>
+      <h2>I am a 8th Grader</h2>
+      <a href="#about" class="btn-scroll scrollto" title="Scroll Down"><i class="bx bx-chevron-down"></i></a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Me Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <span>About Me</span>
+          <h2>About Me</h2>
+          <p>I go to International Community School. I was born in Guntur, 
+            India. My favorite pet and animal is a Dog. My favorite color's are emarald green,
+                violet and obsidian. Math and Art are my favorite subjects.</p>
+        </div>
+
+        <div class="row">
+          <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+          <div class="col-lg-8 d-flex flex-column align-items-stretch">
+            <div class="content ps-lg-4 d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Sanjana Lingamallu</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>425-598-5272</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Redmond, USA</span></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>12</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Grade:</strong> <span>7</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>Sanjana.lss123@gmail.com</span></li>
+                     <li><i class="bi bi-chevron-right"></i> <strong>Zodiac Sign:</strong> <span>Gemini</span></li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Me Section -->
+
+    <!-- ======= My Family Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Family</span>
+          <h2>Family</h2>
+          <p>These are the 4 people in my Family.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Dad</h3>
+            <div class="resume-item pb-0">
+              <h4>Ravi Kumar Lingamallu</h4>
+              <p><em>He works in Microsoft, he really likes nature and he is a Capricorn.</em></p>
+              <img src="../Portfolio_Template/assets/img/Ravi.jpg" style="height: 300px;">
+            </div>
+
+            <h3 class="resume-title">Mom</h3>
+            <div class="resume-item">
+              <h4>Sarita Lingamallu</h4>
+              <p><em>She loves cooking, she has a cooking buisness that she started because I gave her an Idea about it and she's a Leo.</em></p>
+             <img src="../Portfolio_Template/assets/img/Saritha.jpg" style="height: 300px;">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Younger Sister</h3>
+            <div class="resume-item">
+              <h4>Rithika Lingamallu</h4>
+              <p><em>She is in kindergarten, she loves gymnastics, karate and she's a Libra.</em></p>
+              <img src="../Portfolio_Template/assets/img/Rithika.jpg" style="height: 300px;">
+            </div>
+            <div class="resume-item">
+              <h4>A Family Picture</h4>
+              <p><em>This is my Family.</em></p>
+              <img src="../Portfolio_Template/assets/img/Family.jpg" style="height: 400px;">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End My Family Section -->
+
+    <!-- ======= My Book Reviews Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Book Reviews</span>
+          <h2>Book Reviews</h2>
+          <p>I like a lot of Books but here are some of my favourites.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <!-- <div class="icon"> -->
+                <!-- <i class="bx bxl-dribbble"></i> -->
+                <img src="../Portfolio_Template/assets/img/The_Selection_Series.jpg" style="height: 80px; margin-right: -5px;">
+              <!-- </div> -->
+              <h4 class="title">
+                <a  target="_blank" href="https://www.amazon.com/Selection-5-Book-Box-Set-Complete/dp/0062651633/ref=pd_lpo_14_img_1/137-4704613-0586606?_encoding=UTF8&pd_rd_i=0062651633&pd_rd_r=27f43b94-ab72-4ee2-8bd0-ff44eb3d67e1&pd_rd_w=6Nubc&pd_rd_wg=JTKXA&pf_rd_p=a0d6e967-6561-454c-84f8-2ce2c92b79a6&pf_rd_r=65DZ0Z1364M97CGJMQ4E&psc=1&refRID=65DZ0Z1364M97CGJMQ4E">The Selection</a>
+              </h4>
+              <p class="description">One of my favorite book series is The Selection. It is about a group
+                of impoverished girls compete for a chance to live amongst the wealthy,
+                where a rebellion is brewing. For thirty-five girls, the Selection is 
+                the chance of a lifetime. The opportunity to escape the life laid out
+                or them since birth. To be swept up in a world of glittering crowns 
+                and priceless jewels.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <!-- <div class="icon"> -->
+                <!-- <i class="bx bxl-dribbble"></i> -->
+                <img src="../Portfolio_Template/assets/img/One_us_is_lying_series.jpg" style="height: 80px; margin-right: -5px;">
+              <!-- </div> -->
+              <h4 class="title"><a target="_blank" href="https://www.amazon.com/One-Us-Lying-Karen-McManus/dp/1524714682/ref=sr_1_1?dchild=1&keywords=One+of+us+is+lying&qid=1621982780&sr=8-1">One of us is Lying</a></h4>
+              <p class="description">I also love the Books One of us is Lying and One of us is Next. It's 
+                about the gripping story of Bronwyn, Addy, Nate, and Cooper as suspects 
+                in the murder of Simon Kelleher. Each of the high school students have 
+                secrets that they would do anything to protect, so how far would they 
+                go to make sure they're kept out of the spotlight?</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <!-- <div class="icon"> -->
+                <!-- <i class="bx bxl-dribbble"></i> -->
+                <img src="../Portfolio_Template/assets/img/DorkDiaries.jpg" style="height: 80px; margin-right: -5px;">
+              <!-- </div> -->
+              <h4 class="title"><a target="_blank" href="https://www.amazon.com/Dork-Diaries-Books-Collection-Catastrophe/dp/1471198162/ref=sr_1_2?dchild=1&keywords=dork+diaries&qid=1621982823&sr=8-2">Dork Daries</a></h4>
+              <p class="description">A Book Series I loved as a kid was Dork Diaries it basiclly follows an 
+                eighth grader Nikki Maxwell as she chronicles through text and sketches 
+                her move to a snooty new school; her epic battle with her mom for an 
+                iPhone, her enthusiasm for drawing and art, and a love/hate fascination 
+                with the new school's queen bee, a girl named Mackenzie, who becomes 
+                Nikki's rival in a schoolwide art competition. Nikki writes about 
+                friendships, crushes, popularity, and family with a unique and fresh 
+                voice that still conveys a universal authenticity. </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <!-- <div class="icon"> -->
+                <!-- <i class="bx bxl-dribbble"></i> -->
+                <img src="../Portfolio_Template/assets/img/Crossover.jpg" style="height: 80px; margin-right: -5px;">
+              <!-- </div> -->
+              <h4 class="title"><a target="_blank" href="https://www.amazon.com/Crossover-Kwame-Alexander/dp/0544935209/ref=sr_1_4?dchild=1&keywords=crossover&qid=1621982864&sr=8-4">Crossover</a></h4>
+              <p class="description">I also love this book called Crossover. It is in poetic cadence akin to rap, 
+                seventh grader Josh Bell writes about basketball and his family. Josh and 
+                his identical twin, JB, both love basketball, as their father did, a former 
+                professional basketball player. His father has a family history of heart 
+                problems, eats poorly and refuses to see a doctor.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <!-- <div class="icon"> -->
+                <!-- <i class="bx bxl-dribbble"></i> -->
+                <img src="../Portfolio_Template/assets/img/Harry-Potter-Book-List.png" style="height: 80px; margin-right: -5px;">
+              <!-- </div> -->
+              <h4 class="title">
+                <a target="_blank" href="https://www.amazon.com/Harry-Potter-Paperback-Box-Books/dp/0545162076/ref=sr_1_1?crid=6MUXGY1TCTIU&dchild=1&keywords=harry+potter+book+set&qid=1621982969&sprefix=Harry+Potter%2Caps%2C246&sr=8-1">Harry Potter</a>
+              </h4>
+              <p class="description">Also, the classic Harry Potter Series. It is a story about Harry Potter, an 
+                orphan brought up by his aunt and uncle because his parents were killed when 
+                he was a baby. Harry is unloved by his uncle and aunt but everything changes 
+                when he is invited to join Hogwarts School of Witchcraft and Wizardry and he 
+                finds out he's a wizard.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <!-- <div class="icon"> -->
+                <!-- <i class="bx bxl-dribbble"></i> -->
+                <img src="../Portfolio_Template/assets/img/Percy Jackson.jpg" style="height: 80px; margin-right: -5px;">
+              <!-- </div> -->
+              <h4 class="title"><a target="_blank" href="https://www.amazon.com/Jackson-Olympians-Paperback-covers-poster/dp/1484707230/ref=sr_1_3?dchild=1&keywords=percy+jackson+book+set&qid=1621983041&s=books&sr=1-3">Percy Jackson</a></h4>
+              <p class="description">Another clssic Percy Jackson. Twelve-year-old Percy Jackson 
+                is on the most dangerous quest of his life. With the help of a satyr and a daughter 
+                of Athena, Percy must journey across the United States to catch a thief who has 
+                stolen the original weapon of mass destruction — Zeus' master bolt.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <!-- <div class="icon"> -->
+                <!-- <i class="bx bxl-dribbble"></i> -->
+                <img src="../Portfolio_Template/assets/img/FuzzyMud.jpg" style="height: 80px; margin-right: -5px;">
+              <!-- </div> -->
+              <h4 class="title"><a target="_blank" href="https://www.amazon.com/Fuzzy-Mud-Louis-Sachar/dp/0385370229/ref=sr_1_1?dchild=1&keywords=fuzzy+mud&qid=1621983090&s=books&sr=1-1">Fuzzy Mud</a></h4>
+              <p class="description">It's a very Good book and seems so real, which makes it interesting. When fifth-grader Tamaya Dhilwaddi and seventh-grader Marshall Walsh cut through the woods to avoid school bully Chad Hilligas, they unwittingly set off a chain of events that threatens global catastrophe.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box">
+              <!-- <div class="icon"> -->
+                <!-- <i class="bx bxl-dribbble"></i> -->
+                <img src="../Portfolio_Template/assets/img/Percy Jackson.jpg" style="height: 80px; margin-right: -5px;">
+              <!-- </div> -->
+              <h4 class="title"><a target="_blank" href="https://www.amazon.com/Wrinkle-Time-Quintet/dp/0312367546/ref=sr_1_1?dchild=1&keywords=a+wrinkle+in+time&qid=1621983112&s=books&sr=1-1">A Wrinkle in Time</a></h4>
+              <p class="description">This book is a very fun book and is very interesting from the start. Meg Murry and her little brother, Charles Wallace, have been without their scientist father, Mr. Murry, for five years, ever since he discovered a new planet and used the concept known as a tesseract to travel there. Joined by Meg's classmate Calvin O'Keefe and guided by the three mysterious astral travelers known as Mrs. Whatsit, Mrs. Who and Mrs. Which, the children brave a dangerous journey to a planet that possesses all of the evil in the universe.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End My Book Reviews Section -->
+
+
+    <!-- ======= My Hobbies Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Hobbies</span>
+          <h2>Hobbies</h2>
+          <p>These are some of my Hobbies.</p>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center">
+          <li data-filter="*" class="filter-active">Hobbies</li>
+          <li data-filter=".filter-app">Keyboard&Bharatanatyam</li>
+          <li data-filter=".filter-card">Drawing</li>
+          <li data-filter=".filter-web">Baking</li>
+        </ul>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="../Portfolio_Template/assets/img/Awards.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Awards</h4>
+              <p>Keyboard&Bharatanatyam</p>
+              <a href="../Portfolio_Template/assets/img/Awards.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Awards"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img style="height: 350px;" src="../Portfolio_Template/assets/img/BarbieCake.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Barbie Cake</h4>
+              <p>Baking</p>
+              <a href="../Portfolio_Template/assets/img/BarbieCake.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Barbie Cake"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="../Portfolio_Template/assets/img/Dance.JPG" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Bharatanatyam</h4>
+              <p>Keyboard&Bharatanatyam</p>
+              <a href="../Portfolio_Template/assets/img/Dance.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Bharatanatyam"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="../Portfolio_Template/assets/img/DrawingGirl.JPG" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>A Girl</h4>
+              <p>Drawing</p>
+              <a href="../Portfolio_Template/assets/img/DrawingGirl.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="A Girl"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="../Portfolio_Template/assets/img/3tierCake.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>A Tier Cake</h4>
+              <p>Baking</p>
+              <a href="../Portfolio_Template/assets/img/3tierCake.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="A Tier Cake"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="../Portfolio_Template/assets/img/Piano.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Keyboard</h4>
+              <p>Keyboard&Bharatanatyam</p>
+              <a href="../Portfolio_Template/assets/img/Piano.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Keyboard"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="../Portfolio_Template/assets/img/DrawingEye.JPG" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Realistic Eye</h4>
+              <p>Drawing</p>
+              <a href="../Portfolio_Template/assets/img/DrawingEye.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Realistic Eye"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="../Portfolio_Template/assets/img/DrawingBirds.JPG" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Birds</h4>
+              <p>Drawing</p>
+              <a href="../Portfolio_Template/assets/img/DrawingBirds.JPG" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Birds"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="../Portfolio_Template/assets/img/Fruit Cake.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Fruit Cake</h4>
+              <p>Baking</p>
+              <a href="../Portfolio_Template/assets/img/Fruit Cake.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Fruit Cake"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End My Hobbies Section -->
+
+    <!-- ======= Basketball Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Basketball</span>
+          <h2>Basketball</h2>
+          <p>I love playing Basketball, it's my Favourite Sport!</p>
+        </div>
+        <img src="../Portfolio_Template/assets/img/Basketball2.jpg" style=" margin-left: 100px; border: cadetblue dotted; height: 400px;">
+        <img src="../Portfolio_Template/assets/img/Basketball1.jpg" style="margin-left: 125px; height: 400px; border: purple double;">
+        <img src="../Portfolio_Template/assets/img/Basketball3.jpg" style="margin-top: 50px; margin-left: 350px; height: 400px; border: orangered ridge;">
+        </div>
+
+      </div>
+    </section><!-- End Basketball Section -->
+
+
+    <!-- ======= My Javascript Section ======= -->
+    <section id="javascript" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <span>JavaScript</span>
+          <h2>Projects</h2>
+          <p>These are some of my JavaScript Projects.</p>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center">
+          <li data-filter="*" class="filter-active">Calculator</li>
+          <li data-filter=".filter-app">Multiplication Table</li>
+          <li data-filter=".filter-card">Random Background Color</li>
+        </ul>
+
+        <div class="row portfolio-container" id="bkgrnd">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img">
+              <!-- <img src="../Portfolio_Template/assets/img/Awards.jpg" class="img-fluid" alt=""> -->
+              <form name="cal">
+                <table border="2">
+                    <tr>
+                       <td colspan="4"> <input type="text" name="res" id="textbox1"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="buttons" value="1" name="b1" onclick="calc(b1.value)"></td>
+                        <td><input type="button" class="buttons" value="2" name="b2" onclick="calc(b2.value)"></td>
+                        <td><input type="button" class="buttons" value="3" name="b3" onclick="calc(b3.value)"></td>
+                        <td><input type="button" class="buttons" value="+" name="add" onclick="calc(add.value)"></td>
+                    </tr>
+                <tr>
+                    <td><input type="button" class="buttons" value="4" name="b4" onclick="calc(b4.value)"></td>
+                    <td><input type="button" class="buttons" value="5" name="b5" onclick="calc(b5.value)"></td>
+                    <td><input type="button" class="buttons" value="6" name="b6" onclick="calc(b6.value)"></td>
+                    <td><input type="button" class="buttons" value="-" name="subtract" onclick="calc(subtract.value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="buttons" value="7" name="b7" onclick="calc(b7.value)"></td>
+                    <td><input type="button" class="buttons" value="8" name="b8" onclick="calc(b8.value)"></td>
+                    <td><input type="button" class="buttons" value="9" name="b9" onclick="calc(b9.value)"></td>
+                    <td><input type="button" class="buttons" value="×" name="mult" onclick="calc('*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="buttons" value="0" name="b0" onclick="calc(b0.value)"></td>
+                    <td><input type="button" class="buttons" value="÷" name="div" onclick="calc('/')"></td>
+                    <td><input type="button" class="buttons" value="=" name="equal" onclick="res.value=eval(res.value)"></td>
+                    <td><input type="button" class="buttons" value="c" name="clear" onclick="res.value=''"></td>
+                </tr>
+            </table>
+            </form>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <label for="tab">Enter any Number:</label>
+            <input type="text" id="tab">
+            <p id="para1">
+            </p>
+            <button id="b1" value="Sumbit" onclick="mult()">Sumbit</button>
+          
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app" >
+            <h4>Click on the button to change the background color</h4>
+            <button onclick="randomno()">Click Me</button>
+            
+          </div>
+
+                
+
+        </div>
+
+      </div>
+    </section><!-- End My Javascript Section -->
+    <section id="Forms" class="Forms">
+      <div class="container">
+    <div div class="Forms">
+      <head>
+        <title> Feedback Form </title>
+        </head>
+        <body>
+        <h1>Survey Form</h1>
+        <form action="mailto:Sanjana.lss123@gmail.com" method="post" >
+            <label>Enter Your Name:</label>
+            <input type="text" id="name" name="name" value="">
+            <pre> </pre>
+            <p>Select your Gender</p>
+            <input type="radio" name="gender" id="" value="Male"> Male
+            <input type="radio"name="gender" id="" value="Female"> Female
+            <input type="radio" name="gender" id="" value="Non-Binary"> Non-Binary
+            <input type="radio" name="gender" id="" value="Gender-Fluid"> Gender-Fluid
+            <input type="radio" name="gender" id="" value="Other"> Other
+            <input type="radio" name="gender" id="" value="Prefer Not to Share"> Prefer Not to Share
+            <pre> </pre>
+            <p>Do you like this Website?
+              <select name="Feedback">
+                  <option value=""></option>                 
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                  <option value="Average">Average</option>
+                  <option value="Prefer Not to Share">Prefer not to share</option>
+              </select>
+          </p>
+          <pre> </pre>
+          <label>What's Something I can Improve on/Did good with the Website?</label>
+            <input type="text" id="Response" name="Response" value="">
+        <input type="submit" value="Sumbit Your Form">
+        </form>
+        </body>
+    </div>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Sanjana Lingamallu</h3>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Sanjana Protofolio</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Credits <a href="https://bootstrapmade.com/">BootstrapMade</a> 
+        <p>Basketball Photograhy Creds-Annika Lal</p>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
